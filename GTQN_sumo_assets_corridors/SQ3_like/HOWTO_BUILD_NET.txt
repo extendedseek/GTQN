@@ -1,0 +1,11 @@
+# SQ3_like SUMO scenario
+
+Build `SQ3_like.net.xml` with netconvert:
+
+  netconvert --node-files SQ3_like.nod.xml --edge-files SQ3_like.edg.xml \
+    --tls.guess --tls.guess.threshold 0 \
+    --output-file SQ3_like.net.xml
+
+Then run:
+
+  sumo -c sim.sumocfg
