@@ -1,0 +1,30 @@
+{
+  "entry_tls_id": "I0",
+  "corridor_in_lanes": [],
+  "corridor_edges_west_east": [
+    "W0_I0",
+    "I0_I1",
+    "I1_I2",
+    "I2_I3",
+    "I3_I4",
+    "I4_I5",
+    "I5_I6",
+    "I6_I7",
+    "I7_I8",
+    "I8_I9",
+    "I9_E9"
+  ],
+  "corridor_edges_east_west": [
+    "E9_I9",
+    "I1_I0",
+    "I2_I1",
+    "I3_I2",
+    "I4_I3",
+    "I5_I4",
+    "I6_I5",
+    "I7_I6",
+    "I8_I7",
+    "I9_I8",
+    "I0_W0"
+  ]
+}

@@ -1,0 +1,14 @@
+<configuration>
+  <input>
+    <net-file value="SQ1_like.net.xml"/>
+    <route-files value="SQ1_like.rou.xml"/>
+  </input>
+  <time>
+    <begin value="0"/>
+    <end value="3400"/>
+    <step-length value="1.0"/>
+  </time>
+  <processing>
+    <time-to-teleport value="-1"/>
+  </processing>
+</configuration>
