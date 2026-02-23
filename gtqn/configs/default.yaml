@@ -1,0 +1,64 @@
+seed: 7
+
+env:
+  scenario: gtqn/envs/networks/SQ1
+  use_gui: false
+  sumo_binary: sumo
+  step_length_s: 1.0
+  max_sim_seconds: 720
+  min_green_s: 10
+  max_green_s: 60
+  amber_s: 3
+  decision_every_s: null
+  stop_speed_threshold: 0.1
+  corridor:
+    enabled: true
+    entry_tls_id: null
+    corridor_in_lanes: []
+
+model:
+  obs_dim: 32
+  history_len: 8
+  embed_dim: 128
+  n_heads: 4
+  n_layers: 2
+  dropout: 0.1
+  coord:
+    enabled: true
+    variant: "two_stage"     # dense | topk_only | soft_only | random | two_stage
+    K: 4
+    use_gumbel_topk: false
+  cgg:
+    enabled: true
+    mixer: "qmix"            # qmix | sum
+    hypernet_embed: 64
+
+train:
+  total_env_steps: 1200000
+  replay_size: 200000
+  batch_size: 256
+  gamma: 0.95
+  lr: 3.0e-4
+  lr_final: 1.0e-4
+  lr_decay_frac: 0.7
+  target_tau: 0.005
+  grad_clip_norm: 10.0
+  epsilon_start: 1.0
+  epsilon_final: 0.05
+  epsilon_decay_frac: 0.6
+  warmup_steps: 5000
+  train_every: 4
+  log_every: 1000
+  save_every: 50000
+
+reward:
+  mode: "two_level"          # local_only | global_only | weighted | two_level
+  alpha: 0.8
+  queue_weight: 1.0
+  delay_weight: 1.0
+  hindrance_weight: 1.0
+
+curriculum:
+  enabled: false
+  start_active: 2
+  add_every_episodes: 800
