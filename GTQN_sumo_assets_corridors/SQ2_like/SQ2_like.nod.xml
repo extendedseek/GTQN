@@ -1,0 +1,37 @@
+<nodes>
+  <node id="W0" x="-250.00" y="0.00" type="dead_end"/>
+  <node id="E10" x="5250.00" y="0.00" type="dead_end"/>
+  <node id="I0" x="0.00" y="0.00" type="traffic_light"/>
+  <node id="N0" x="0.00" y="250.00" type="dead_end"/>
+  <node id="S0" x="0.00" y="-250.00" type="dead_end"/>
+  <node id="I1" x="500.00" y="0.00" type="traffic_light"/>
+  <node id="N1" x="500.00" y="250.00" type="dead_end"/>
+  <node id="S1" x="500.00" y="-250.00" type="dead_end"/>
+  <node id="I2" x="1000.00" y="0.00" type="traffic_light"/>
+  <node id="N2" x="1000.00" y="250.00" type="dead_end"/>
+  <node id="S2" x="1000.00" y="-250.00" type="dead_end"/>
+  <node id="I3" x="1500.00" y="0.00" type="traffic_light"/>
+  <node id="N3" x="1500.00" y="250.00" type="dead_end"/>
+  <node id="S3" x="1500.00" y="-250.00" type="dead_end"/>
+  <node id="I4" x="2000.00" y="0.00" type="traffic_light"/>
+  <node id="N4" x="2000.00" y="250.00" type="dead_end"/>
+  <node id="S4" x="2000.00" y="-250.00" type="dead_end"/>
+  <node id="I5" x="2500.00" y="0.00" type="traffic_light"/>
+  <node id="N5" x="2500.00" y="250.00" type="dead_end"/>
+  <node id="S5" x="2500.00" y="-250.00" type="dead_end"/>
+  <node id="I6" x="3000.00" y="0.00" type="traffic_light"/>
+  <node id="N6" x="3000.00" y="250.00" type="dead_end"/>
+  <node id="S6" x="3000.00" y="-250.00" type="dead_end"/>
+  <node id="I7" x="3500.00" y="0.00" type="traffic_light"/>
+  <node id="N7" x="3500.00" y="250.00" type="dead_end"/>
+  <node id="S7" x="3500.00" y="-250.00" type="dead_end"/>
+  <node id="I8" x="4000.00" y="0.00" type="traffic_light"/>
+  <node id="N8" x="4000.00" y="250.00" type="dead_end"/>
+  <node id="S8" x="4000.00" y="-250.00" type="dead_end"/>
+  <node id="I9" x="4500.00" y="0.00" type="traffic_light"/>
+  <node id="N9" x="4500.00" y="250.00" type="dead_end"/>
+  <node id="S9" x="4500.00" y="-250.00" type="dead_end"/>
+  <node id="I10" x="5000.00" y="0.00" type="traffic_light"/>
+  <node id="N10" x="5000.00" y="250.00" type="dead_end"/>
+  <node id="S10" x="5000.00" y="-250.00" type="dead_end"/>
+</nodes>
