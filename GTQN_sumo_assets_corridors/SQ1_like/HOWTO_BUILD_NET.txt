@@ -22,8 +22,5 @@ Notes:
 - `--tls.guess` creates traffic lights and a default program at nodes marked `type="traffic_light"`.
 - You can replace the guessed TLS programs with your 4-phase program later using netedit or an additional tls file.
 
-## Optional: create a fixed 4-phase program
-If you need the *exact* 4-phase pattern (NS through, NS left, EW through, EW left),
-you'll typically use netedit to define controlled connections and then export the tlLogic.
 
 See SUMO Traffic Lights docs for how to load/override tlLogics.
