@@ -1,8 +1,5 @@
 # GTQN - Graph Transformer Q-Network
 
-This repository is a **faithful, engineering-friendly implementation** of the *Graph Transformer Q-Network (GTQN)*
-described in the provided manuscript:
-
 > **Graph Transformer Q-Network for Collaborative Governance and Decentralized Decision-Making in Multi-Intersection Networks**
 
 It includes:
