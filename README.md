@@ -1,4 +1,4 @@
-# GTQN — Graph Transformer Q-Network (reference implementation)
+# GTQN - Graph Transformer Q-Network
 
 This repository is a **faithful, engineering-friendly implementation** of the *Graph Transformer Q-Network (GTQN)*
 described in the provided manuscript:
