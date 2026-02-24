@@ -12,8 +12,6 @@ It includes:
 - SUMO/TraCI environment wrapper for multi-intersection control (event-driven, phase-duration actuation)
 - Reproducible configs and ablation toggles (attention, reward, governance)
 
-> NOTE: SUMO is external. This repo provides a clean TraCI interface; you must install SUMO and supply `.net.xml` and `.rou.xml` (or generate routes).
-
 ---
 
 ## Quickstart
@@ -51,24 +49,6 @@ python scripts/train.py --config gtqn/configs/default.yaml   env.scenario=gtqn/e
 ```bash
 python scripts/eval.py --run_dir runs/<your_run>
 ```
-
----
-
-## Design overview (matches the manuscript)
-
-### DJC (decentralized, executed online)
-- Builds a local state embedding `s_i,k` via a **temporal Transformer** over the last `H` decision steps.
-- Computes sparse coordination context `c_i,k`:
-  1) **Discrete peer gating**: select top-K peers via learned scores (state-dependent)
-  2) **Soft relevance weighting**: softmax weights over selected peers
-- Outputs per-agent Q-values `Q_i(s_i,k, c_i,k, a)` and selects action ε-greedily.
-
-### CGG (centralized, training-only)
-To remain scalable (100 intersections), centralized governance is implemented via a **QMIX-style mixing network**:
-- per-agent utilities `q_i`
-- mixing network conditioned on global graph embedding → `Q_tot`
-
-This is CTDE: only `q_i` is needed at execution; CGG is used in training to stabilize credit assignment.
 
 ---
 
